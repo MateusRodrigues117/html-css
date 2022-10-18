@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&Delta;</h1>
+    </header>
+    <nav>
+        <a href="index.html">Principal</a>
+    </nav>
+    <main>
+        <article>
+            <h2>videos</h2>
+            <section>
+                <p>A tag <strong>video</strong> é usada quando os arquivos estao no nosso servidor, ela concentra todas as fontes do video. Adicionamos varios <strong>source</strong> com os formatos diferentes do mesmo video para caso um falhe outro serar carregado.</p>
+
+                <video width="550px" controls poster="">
+                    <source src="../videos/Oxenfurt_theme_-_Bonnie_at_Morn - 10Convert.com.mp4" type="video/mp4">
+                </video>
+
+                <h3>Atributos de video</h3>
+                <ul>
+                    <li class="itensprincipais"><strong><code>width=""</code></strong></li>
+                    <p>Indica a largura ocupada pelo video.</p>
+                    <li class="itensprincipais"><strong><code>poster=""</code></strong></li>
+                    <p>Configura a imagem que ficarar de thumb do video.</p>
+                    <li class="itensprincipais"><strong>controls :</strong></li>
+                    <p>Configura se os controles de video apareerao.</p>
+                    <li class="itensprincipais"><strong>autoplay :</strong></li> 
+                    <p>Faz o video iniciar automaticamente ao carregar a pagina.</p>  
+                </ul>
+
+                <aside>
+                    <h3>Types</h3>
+                    <p><strong>video/mp4</strong> (mpeg), <strong>video/webm</strong> (webm), <strong>video/ogg</strong> (ogg) os dois primeiros sao os que possuem maior compatibilidade com os navegadores atualmente. </p>  
+                </aside>
+
+                <aside>
+                    <h3>Navegadores e Formatos</h3>
+                    <ul class="semcoluna">
+                        <li><strong>Microsoft Edge</strong> / .mp4 .m4v</li>
+                        <li><strong>Apple Safari</strong> / .mp4 .m4v</li>
+                        <li><strong>Google Chrome</strong> / .mp4 .m4v .webm .ogv</li>
+                        <li><strong>Mozilla</strong><strong id="fogo"> Firefox</strong> / .webm .ogv</li>
+                        <li><strong>Opera</strong> / webm .ogv</li>
+                    </ul>
+                </aside>
+            </section>
+            <h2>Youtube Videos</h2>
+            <section>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0AxdZMPsfGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Dyn Marv</p>
+    </footer>
+</body>
+</html>

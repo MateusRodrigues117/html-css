@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Class e Pseudo-Class</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;   
+        }
+
+        h1 {
+            background-color: aquamarine;
+        }
+
+        h1#primeirotitulo {
+            color: red;
+        }
+
+        h1#segundotitulo {
+            color: violet;
+        }
+
+        .secundario {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: crimson;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="primeirotitulo">Exemplo de Titulo</h1>
+
+    <h2 class="secundario">Qualquer Coisa</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora, repellat sed asperiores vitae sequi voluptate blanditiis ipsam deserunt sint molestiae et at vel quas quod, ex qui, velit dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nulla ab non voluptatem alias, quisquam dicta? Ullam blanditiis deserunt consequatur molestias neque, totam aut tenetur vero sequi. Commodi, laudantium eum!</p>
+
+    <h2 class="secundario">Qualquer Coisa</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora numquam deleniti quasi nobis, expedita velit repudiandae libero, aspernatur aliquam quibusdam doloribus voluptas aperiam corrupti sint architecto illum exercitationem rem!</p>
+
+    <h1 id="segundotitulo">Exemplo de Titulo</h1>
+
+    <h2 class="secundario">Qualquer Coisa</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto obcaecati est expedita voluptatibus doloremque enim debitis sunt alias quia! Tenetur voluptate excepturi, doloremque recusandae debitis cupiditate quam commodi unde earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis accusantium, placeat esse officiis tempora sequi dignissimos laudantium qui doloremque voluptates ullam iure error, delectus reprehenderit animi, porro quos! Similique?</p>
+    <p>Passe o mouse no texto abaixo:</p>
+    <div>
+        Passe aqui
+        <p>ACHOU...</p>
+    </div>
+</body>
+</html>

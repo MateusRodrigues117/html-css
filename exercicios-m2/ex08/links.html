@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lINKS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #dc143c;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a::after {
+            content: '[LINK]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+
+        .especial::before {
+            content: ';)';
+            text-decoration: none;
+            font-weight: bold;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtu.be/gTeP2vNbmP8" target="_blank">Emergence of Talents</a></li>
+        <li><a href="https://youtu.be/2ISfifczkgM" target="_blank">Departure to The Front Lines</a></li>
+        <li><a href="https://youtu.be/qgjV5xyW8C0" target="_blank">Senya Itachi</a></li>
+        <li><a href="https://youtu.be/qpi9YXaChHI" target="_blank" class="especial">Flow Sing</a></li>
+    </ul>
+</body>
+</html>

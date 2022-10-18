@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes/tipos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gradientes e Tipos</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="esquerda">Gradientes</h2>
+
+                <h3>Gradient linear:</h3>
+                <p>Para criar um gradiente linear usamos a propriedade <strong><code>background-image:linear-gradient(to right,var(--cor3),transparent);</code></strong> e configuramos a direçao ( to right, to left, to top, to bottom ), a cor e se quiser a trasparencia.</p>
+                
+                <div id="gradlinear"><h4>EX</h4></div>
+                <p>Ele vai de uma ponta a outra.</p>
+
+                <h3>Gradient radial:</h3>
+                <p>Criamos um gradiente radial(circular) com a propriedade <strong><code>background-image:radial-gradient(circle,red,yellow,green); </code></strong> configuramos que é circular e suas cores</p>
+
+                <div id="gradradial"><h4>EX</h4></div>
+                <p>Repare no seu centro circular.</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="textocentralizado">Atributos de Font</h2>
+
+                <ul class="textocentralizado">
+                    <li><strong>font-weight</strong></li>
+                    <p>Muda o peso da fonte colocando ou retirando o negrito dele.</p>
+                    <li><strong>font-style</strong></li>
+                    <p>Altera o estilo de um texto do normal para italico.</p>
+                    <li><strong>font-family</strong></li>
+                    <p>Parametro usado para mudar a familia da fonte. </p>
+                    <li><strong>font-size</strong></li>
+                    <p>Troca o tamanho da letra de um texto.</p>
+                </ul>
+                <aside class="secundario">
+                    <h3>Shorthands</h3>
+                    <div>
+                        <p>Se usa <strong>shorthands</strong> para simplificar as declaraçoe. Exemplo sem o uso de shorthand:</p>
+                        <code>
+                            <pre>
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+    }
+                            </pre>
+                        </code>
+                                    <p>Agora o exemplo usando a shorthand para a propriedade font:</p>
+                        <code>
+                            <pre>
+    p {
+        font: italic bold 1em Arial, Helvetica, sans-serif;
+    }                       
+                            </pre>
+                        </code>
+                    </div>
+
+    <p style="border-radius: 0px;">A ordem dos atributos de uma shorthand em <strong>CSS</strong> é importante. No caso da propriedade font, devemos informar na seguinte ordem:</p>
+    <ol>
+        <li>font-size</li>
+        <li>font-variant</li>
+        <li>font-weight</li>
+        <li>font-size/line-height</li>
+        <li>font-family</li>
+    </ol>
+                </aside>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2 class="textocentralizado">Alinhamento de texto</h2>
+                <p>Existem quatro tipos de alinhamento de texto, centralizado a esquerda, a direita, justificado(se adapita a caixa ficando organizado) e no centro.</p>
+                <ul class="textocentralizado">
+                    <li>text-align: <strong>left;</strong></li>
+                    <li>text-align: <strong>right;</strong></li>
+                    <li>text-align: <strong>justify;</strong></li>
+                    <li>text-align: <strong>center;</strong></li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2 class="esquerda">Tipos</h2>
+                <p><strong>Glifos</strong>, letras, caracteres sao signos alfabeticos projetados para reproduçao de textos com as prenças mecanicas. Ex: A, B, C, D...</p>
+                <h3  class="esquerda">Familia tipografica</h3>
+                <p>È o conjunto de <strong>glifos</strong> que possue as mesmas caracteristicas anatomicas independente das suas variaços.</p>
+                <h3 class="esquerda">Fontes</h3>
+                <p>Sao o conjunto de <strong>glifos</strong> que formam uma familia tipografica.</p>
+                <h3 class="esquerda">Tamanho da fonte</h3>
+                <p>O tamanho padrao da maioria das fontes é <strong>16px</strong>, isso equivale a <strong>1em</strong>. A parti dai podemos configurar o tamanho de um titulo como 2x o tamanho da fonte como <strong class="corvermelha">2em</strong>.</p>
+                <h3 class="esquerda">Medidas</h3>
+                <p>As medidas de uma letra sao : <strong>cm</strong> ( <ins>centimetros</ins> ), <strong>in</strong> ( <ins>polegadas</ins> ), pt ( pontos ), <strong>pc</strong> ( <ins>paicas</ins> ), <strong>px</strong> ( <ins>pixels</ins> ), etc. <br> A recomendaçao da W3C é usar <strong class="corvermelha">px</strong> e <strong class="corvermelha">em</strong>.</p>
+            </article>
+            <aside class="primario">
+                <h3>Declaraçao</h3>
+<code>
+    <pre>
+        h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.5em;
+        }
+    </pre>
+</code>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Dyn_Marv</p>
+    </footer>
+</body>
+</html>

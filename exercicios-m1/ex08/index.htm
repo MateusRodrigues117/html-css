@@ -1,0 +1,27 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Aumente e diminua o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 497px)" srcset="imagens/nagflarpequeno.png" type="image/png">
+        <source media="(max-width: 992px)" srcset="imagens/mansaomedia.png" type="image/png">
+        <img src="imagens/ardgaethgrande.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos reproduzir audios em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Skylines - Anno Domini Beats.mp3" type="audio/mpeg">
+        <source src="midia/Skylines - Anno Domini Beats.ogg" type="audio/ogg">
+        <source src="midia/Skylines - Anno Domini Beats.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao roda o audio.<a href="midia/Skylines - Anno Domini Beats.mp3">Clique aqui para baixalo</a>.</p>
+    </audio>
+</body>
+</html>

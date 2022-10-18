@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estilos CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Estilos CSS</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <section>
+            <article>
+                <h2 class="esquerda">Estilo inline</h2>
+                <p>Para criar estilos inline adicionamos o parametro <strong>style=""</strong> a uma tag <strong>HTML</strong> e dentro de suas aspas colocamos as declaraçoes.</p>
+
+                <p> Para falar com toda a sinceridade, a técnica <strong>CSS inline style</strong>
+                    deve ser evitada ao máximo. Ela acaba deixando seu código meio
+                    confuso, misturando a parte <strong>HTML</strong> e <strong>CSS</strong> em uma mesma linha. Mas
+                    se é para citar um momento específico em que podemos aplicar
+                    estilos inline em nossos códigos, use apenas em configurações muito
+                    pontuais e que não serão mais usadas em nenhum outro momento.</p>
+                    
+                
+     <code class="precode">
+        <pre>
+&lt;h1 style="color:<strong class="corvermelha">red</strong>;"&gt;
+        </pre>
+    </code>                              
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="esquerda">Estilo interno</h2>
+                <p>Dentro da area de <strong>&lt;head&gt;</strong> colocamos a tag <strong>&lt;style&gt; &lt;/style&gt;</strong> e dentro dela adicionamos os seletores com suas declaraçoes.</p>
+
+                <p> Já a técnica <strong>CSS internal style</strong> organiza melhor seu código, separando conteúdo e
+                    estilo em duas áreas bem definidas do seu documento. Use essa técnica quando for
+                    criar páginas isoladas com estilos próprios, que não serão replicados em outras
+                    páginas. Opte também por essa técnica apenas se a quantidade de configurações de
+                    estilo for pequena/média. Usar muitos seletores com muitas declarações vai fazer com
+                    que seu arquivo .html fique muito grande e seu conteúdo seja visualmente jogado lá
+                    pra baixo, dificultando manutenções futuras.</p>
+                   
+                
+
+<code class="precode">
+    <pre>
+&lt;head&gt;
+  &lt;style&gt;
+        h1 {
+            background-color:<strong class="corvermelha">red</strong>;
+        }
+  &lt;/style&gt;
+&lt;head&gt;
+    </pre>
+</code>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="esquerda">Estilo externo</h2>
+                <p>Na area de inserimos a tag <strong>&lt;link&gt;</strong> configurada para <strong>CSS</strong> (<ins>link:css</ins>) e no seu parametro <strong>href=""</strong> adicionamos o caminho para o documento <strong>CSS</strong> qe ira conter nossos seletores e suas declareaçoes.</p>
+
+                <p>Por fim, opte sempre pela técnica <strong>CSS external style</strong> sempre que seu estilo for
+                    usado em várias páginas dentro do seu site. Usando a tag <strong>&lt;link&gt;</strong> em várias páginas,
+                    você pode compartilhar o mesmo estilo entre elas e não vai precisar ficar alterando
+                    vários arquivos quando o seu cliente solicitar uma pequena mudança no tom de uma
+                    determinada cor, por exemplo.</p>
+
+            </article>
+        </section>
+        <aside class="primario">
+            <h3>De forma resumida, guarde isso na sua cabeça:</h3>
+            <ol>
+                <li><strong>CSS externo</strong> = use sempre que puder</li>
+                <li><strong>CSS interno</strong> = use para pequenas configurações</li>
+                <li><strong>CSS inline</strong> = procure evitar</li>
+            </ol>
+            <p> Ainda é possível misturar as três técnicas,     criando um CSS externo para as
+                configurações globais, CSS interno para as configurações locais de um documento e
+                CSS inline para pequenas configurações pontuais.</p>
+
+            <h3>Propriedades herdadas</h3>
+            <p>Os estilos de cada serão combinados nessa ordem:</p>
+            <ol>
+                <li>Primeiro: <strong>CSS inline</strong></li>
+                <li>Segundo: <strong>CSS interno</strong></li>
+                <li>Terceiro: <strong>CSS externo</strong></li>
+            </ol>
+            <p>Caso haja duplicidade nas configurações, o que fica valendo no final é a
+                propriedade especificada nas configurações inline. Cada camada de aplicação de
+                estilos vai adicionando propriedades novas e sobrescrevendo as configurações do nível
+                anterior.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Dyn_Marv</p>
+    </footer>
+</body>
+</html>

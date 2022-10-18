@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&Delta;</h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self" rel="prev">Principal</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Audios</h2>
+            <section>
+              <p>Dentro da tag <strong>audio</strong> adicionamos varios <strong>source</strong> (source src="") com os formatos diferentes do mesmo audio.</p>
+              <p>Coloque na parte de cima o seu formato favorito, os demais so serao carregados caso o primeiro falhe. Caso todos falhem se cria um paragrafo para ser efetuado o download do arquivo.</p>
+
+                <audio preload="metadata" controls autoplay loop>
+                    <source src="../audios/Cloak-And-Dagger.mp3" type="audio/mpeg">
+                </audio>
+
+              <h3>Atributos de <strong>audio</strong></h3>
+              <ul>
+                <li class="itensprincipais"><strong><code>preload=""</code></strong></li>
+                <p>Indica se o audio sera pre carregado ou nao e aceita tres valores:</p>
+                <ul class="semtype">
+                    <li><strong>metadata :</strong></li>
+                    <p>Vai carregar somente as informaçoes sobre o aquivo.(tamanho,tempo,imformaçoes sobre direitos, etc)</p>
+                    <li><strong>none :</strong></li>
+                    <p>Nao vai carregar absolutamente nada ate o usuario apertar play ou um script inicie a reproduçao.</p>
+                    <li><strong>auto :</strong></li>
+                    <p>Vai carregar o arquivo de audio inteiro assim que a pagina for carregada, mesmo que o usuari nunca aperte play. (padrao)</p>
+                </ul>
+                <li class="itensprincipais"><strong>controls :</strong></li>
+                <p>Apresentarar o play na tela. Caso nao seja colocado na tag <strong>audio</strong> o player ficarar com uma cor transparente e o usuario nao poderar interagir.</p>
+                <li class="itensprincipais"><strong>autoplay :</strong></li>
+                <p>Quando inserido vai iniciar a reproduçao do audio assim que a pagina for carregada.</p>
+                <li class="itensprincipais"><strong>loop :</strong></li>
+                <p>Faz o audio ser reproduzido eternamente.</p>
+              </ul>
+
+              <aside>
+                <h3>Types</h3>
+                <ul>
+                    <li><strong>mp3</strong> / audio/mpeg</li>
+                    <li><strong>wav</strong> / audio/wav</li>
+                    <li><strong>ogg</strong> / audio/ogg</li>
+                </ul>
+              </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Dyn Marv</p>
+    </footer>
+</body>
+</html>

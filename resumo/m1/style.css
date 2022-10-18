@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #0D0C14;
+    --cor2: #283049;
+    --cor3: #a5bbdf;
+
+    --cor4: #A6142F;
+    --cor5: #73091D;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+header {
+    height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor2),var(--cor1));
+    color: white;
+    max-width: 620px;
+    margin: auto;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.452);
+}
+
+header > h1 {
+    font-family: var(--font-padrao);
+    padding-top: 30px;
+    font-size: 5em;
+}
+
+header > p {
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding:20px 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
+    max-width: 600px;
+    margin: 0px auto 10px auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+main {
+    background-color: var(--cor2);
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
+}
+
+article > h2 {
+    margin: 0px -10px 10px -10px;
+    padding:  0px 10px;
+    text-align: center;
+    background-color: var(--cor2);
+    color: white;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor2),var(--cor1));
+    color: white;
+    padding: 10px;
+    max-width: 200px;
+    margin: 10px 0px 10px -20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.449);
+}
+
+section h3 > strong {
+    color: var(--cor3);
+}
+
+section p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 5px;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-family: var(--font-padrao);
+    font-weight: normal;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+section p > a:visited {
+    color: var(--cor4);
+}
+
+section > p > a::before{
+    content: '>>';
+    font-weight: light;
+}
+
+section > p > a::after{
+    content: '<<';
+    font-weight: light;
+}
+
+section p > strong {
+    color: var(--cor2);
+}
+
+section pre {
+    margin: 20px 0px;
+}
+
+section ol {
+    list-style-position: inside;
+    font-size: 1.1em;
+    padding: 10px;
+    text-indent: 10px;
+    line-height: 1.6em;
+}
+
+section ul {
+    list-style-position: inside;
+    padding: 10px;
+    text-indent: 10px;
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+ul > li.itensprincipais > strong {
+    
+    border-radius: 10px;
+    padding: 3px;
+    color: var(--cor4);
+}
+ 
+ul > li > strong {
+    color: var(--cor3);
+}
+
+ul > p {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+section img {
+    margin: 10px 0px;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+section video {
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor2);
+    margin: 30px -20px 30px -20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+section#tags ul {
+    list-style-type: none;
+    columns: 2;
+}
+
+section#tags ul > li > strong {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+section ul.semtype {
+    list-style-type: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+aside {
+    background-color: var(--cor3);
+    border-radius: 5px;
+}
+
+aside p {
+    color: white;
+    padding: 0px 10px;
+}
+
+aside p > strong {
+    color: var(--cor2);
+}
+
+aside > p {
+    display: none;
+}
+
+aside:hover > p {
+    display: block;
+}
+
+aside ul {
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    columns: 3;
+}
+
+aside  ul > li > strong {
+    color:var(--cor2)
+}
+
+aside ul.semcoluna {
+    columns: 1;
+}
+aside #fogo {
+    color: #dc143c;
+}
+
+/*//////////////////////////////////////////////////////////////////////////dd*/
+
+footer {
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: 10px auto 0px auto;
+    max-width: 600px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.295);
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer:hover {
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+}

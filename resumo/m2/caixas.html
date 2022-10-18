@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Caixas</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+               
+                <h2 class="esquerda">Anatomia</h2>
+                
+                    <p>A grande maioria dos elementos <strong>HTML</strong> sao como <strong>caixas</strong>. Elas sao containers que armazenam conteudos ou ate mesmo outras caixas.</p>
+                    <p>Tudo começa com o <strong>conteudo</strong> (<INS>content</INS>). Por padrao toda caixa é composta apenas pelo conteudo e nao possue padding, nem border, outline e margin.
+                    Uma exeçao é a tag <strong>&lt;body&gt;</strong> que ja vem com uma margin de 8px.</p>
+                    <p>Todo conteudo possue uma largura(<ins>width</ins>) e uma altura(<ins>height</ins>) e a esse conjunto de propriedades damos o nome de <strong>box-size</strong>(<ins>tamanho da caixa</ins>). O tamanho nao inclue as medidas padding, border, outline, margin.</p>
+                    <p>Depois do conteudo, vamos nos focar na <strong>borda</strong> que fica em volta dele. Ela pode ter uma espessura, uma cor e um formato.</p>
+                    <p>Entre a borda e o conteudo para dentro  temos o <strong>preenchimento</strong>(<ins>padding</ins>) e da borda para fora temos a <strong>margem</strong>(<ins>margin</ins>). </p>
+                    <p>Entre a margem e a borda, podemos determinar o <strong>contorno</strong>(<ins>outline</ins>) que é muito pouco utilizado, mas existe. Ele é um traçado visual que poddemos criar da borda e o cauculo da sua espessura faz parte da margen estabelecida.</p>
+
+                <aside class="primario">
+                    <h3>Tamanho total</h3>
+                    <p>Para caucular a largura total de um elemento na tela, some os tamanhos do <strong>conteudo</strong> + <strong>preenchimento</strong> + <strong>borda</strong> + <strong>margem</strong>. O <strong>contorno</strong> nao entra nessa conta pois utiliza parte da medida da margem.</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2 class="esquerda">Shorthands</h2>
+
+                <h3 class="esquerda">Border</h3>
+                <p>Declaraçao padrao:</p>
+<code>
+    <pre>
+        border-width: 10px;
+        border-style: solid;
+        border-color: <strong class="corvermelha">red</strong>;
+    </pre>
+</code>
+                <p>Com <strong>shorthand:</strong></p>
+<code>
+    <pre>
+        border: 10px solid <strong class="corvermelha">red</strong>;
+    </pre>
+</code>
+                <h3 class="esquerda">Outline</h3>
+                <p>Declaraçao padrao</p>
+<code>
+    <pre>
+        outline-width: 30px;
+        outline-style: solid;
+        outline-colro: <strong class="corvermelha">red</strong>;
+    </pre>
+</code>
+                <p>Com <strong>shorthand:</strong></p>
+<code>
+    <pre>
+        outline: 30px solid <strong class="corvermelha">red</strong>;
+    </pre>
+</code>
+
+                <aside class="primario">
+                    <h3>Preenchimeto e margem personalizados</h3>
+                    <p>Todo elemento de caixa possue quatro valores para padding e quatro para margin, sempre nessa ordem: <strong>superior</strong>(<ins>top</ins>), <strong>direita</strong>(<ins>right</ins>), <strong>inferior</strong>(<ins>bottom</ins>), <strong>esquerda</strong>(<ins>left</ins>). Quando aplicamos um unico valor de dimensao para o preenchimento ou margem, esse mesmo valor se aplica simetricamente para todas direçoes.</p>
+                </aside>
+
+                <h3 class="esquerda">Padding</h3>
+                <p>Declaraçao padrao</p>
+<code>
+    <pre>
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    </pre>
+</code>
+                <p>Com <strong>shorthand:</strong></p>
+<code>
+    <pre>
+        padding: 10px 15px 20px 30px;
+    </pre>
+</code>
+                <h3 class="esquerda">Margin</h3>
+                <p>Declaraçao padrao:</p>
+<code>
+    <pre>
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    </pre>
+</code>
+                <p>Com <strong>shorthand:</strong></p>
+<code>
+    <pre>
+        margin: 0px 10px 20px 30px;
+    </pre>
+</code>         
+                <h3 class="esquerda">Duas medidas</h3>
+                <p>Tambem podemos usar a opçao para indicar a <strong>shorthand</strong> de <strong>preenchimento</strong> e <strong>margem</strong> com apenas duas medidas:</p>
+<code>
+    <pre>
+        padding: 10px 20px;
+
+        margin: 0px 15px;
+    </pre>
+</code>
+                <p>A primeira medida para <strong>top / bottom</strong> e a segunda para <strong>right / left</strong>.</p>
+
+                 <aside class="primario">
+                    <h3 class="textocentralizado">Margen no automatico</h3>
+                    <p>Para que seja feito devemos indicar ao navegador que ele caulcule automaticamente as margens da esquerda e da direita para que o bloco seja colocado no meio do navegador, independentemente da janela. Para <strong>centralizar</strong> uma caixa, use a seguinte declaraçao no sue seletor: <strong><code>margin: auto;</code></strong></p>
+                </aside>
+
+            </article>  
+        </section>
+
+        <section>
+            <article>
+                <h2 class="esquerda">Tipos de Caixa</h2>
+                <h3 class="esquerda">Block-level</h3>
+
+                <p>Um elemento dito <strong>block-level</strong> sempre vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde esta contido. Se nao estiver contido em nenhuma caixa, ele vai ocupar 100% da largura de <strong>&lt;body&gt;</strong>.</p>
+                <p>O elemento block-level mais conhecido é a <strong>div</strong> e suas variaçoes semanticas modernas da <strong>HTML5</strong>, como main, section, aside, etc.</p>
+
+                <h3 class="esquerda">Inline-level</h3>
+                <p>Um elemento do tipo <strong>inline-level</strong> nao vai começar em uma nova linha, e sim no ponto exato onde forem definidos. E a sua largura vai ocupar o tamanho relativo ao seu conteudo. Alguns exemplos: a, abbr, img.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Dyn_Marv</p>
+    </footer>
+</body>
+</html>

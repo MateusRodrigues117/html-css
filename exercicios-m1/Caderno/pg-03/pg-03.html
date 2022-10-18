@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pagina-03</title>
+</head>
+<body>
+
+    <hr>
+    <h1>IMG</h1>
+    <h2>Componetes</h2>
+    <code>&lt;img src="foto.png" alt="exemplo de foto"&gt;</code>
+    <ul>
+        <li>src="" é o local onde o endereço da foto deve ser colocado.(dentro das aspas)</li>
+        <li>alt="" é um paramentro que é usado para colocar um texto alternativo que irar aparecer caso a imagem nao possa ser carregada.</li>
+        <li>exemplo de foto esta simbolizando o valor do parametro.</li>
+    </ul>
+    <p>A tag img é usada para inserir imagens na pagina.</p>
+
+    
+
+    <hr>
+    <h1>Testando Imagens</h1>
+    <h2>Imagem que esta na mesma pasta</h2>
+    <p>Geraz de Leyda.</p>
+    <blockquote cite="https://gwent.one/pt/card/202801">
+        Aceite um contrato de Aen Seidhe por um dh'oine quando puder, pois há menos probabilidade de levar uma facada nas costelas no lar da moeda.-Geraz
+    </blockquote>
+    <img src="GezrasDeLeyda.jpg" alt="">
+
+    <h2>Imagem em sub-pasta</h2>
+    <p>Mentor da escola do gato.</p>
+    <blockquote cite="https://gwent.one/pt/card/202807">
+        Se você cair, já era. Suas sete vidas acabaram, rapaz.
+    </blockquote>
+    <img src="imagens/BruxoGatoMentor.jpg" alt="">
+
+    <h2>Imagem por link</h2>
+    <p>Adepto da escola do gato.</p>
+    <blockquote cite="https://gwent.one/pt/card/202809">
+        Os Gatos alunos ajustam o seu equilíbrio andando em uma corda bamba de olhos vendados. <br> O fracasso é iminente no começo, mas, com o treinamento adequado, as artimanhas ficam mais altas — e perigosas — enquanto eles se aproximam da Provação Final, onde o fracasso não é tão suave.
+    </blockquote>
+    <img src="https://gwent.one/image/gwent/assets/card/art/medium/2341.jpg" alt="">
+    <p>Os melhores formatos de imagens para web sao o Jpeg e Png. <br> O ponto forte do formato Jpeg é a maior compactaçao ja o do formato Png é a capacidade de permitir tranparencia.</p>
+
+    <hr>
+        <h1>&lt;PICTURE&gt;</h1>
+        <p>A tag &lt;PICTURE&gt; permite criar mais de uma origem para uma tag &lt;IMG&gt; podendo assim torna a imagem flexivel a varios formatos de tela.</p>
+
+        <h2>Imagem flexivel</h2>
+        <p>Aumente e diminua o tamanho do seu navegador.</p>
+
+        <
+            <source media="(max-width: 497px)" srcset="imagens/nagflarpequeno.png">
+            <source media="(max-width: 992px)" srcset="imagens/mansaomedia.png">
+            <img src="imagens/ardgaethgrande.png" alt="imagem flexivel">
+        </picture>
+    <hr>
+
+    <h1>Favicons</h1>
+    <p>Dentro de Head voce deve inserir <code>
+        &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+    </code>, a melhor forma de fazer é digitar link na area de head e deixar o visual code completar clicando em favicon.</p>
+    <p>Em href coloque o endereço do favicon.</p>
+
+    <hr>
+    <p>Voltar a <a href="../index.html">pagina-01</a></p>
+    
+</body>
+</html>

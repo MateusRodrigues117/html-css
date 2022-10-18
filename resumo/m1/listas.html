@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&Delta;</h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self" rel="prev">Principal</a>
+    </nav>
+    <main>
+            <article>
+                <h2>Listas Ordenadas</h2>
+                <section >
+                    <p>Quando queremos criar uma <strong>ordened list</strong> (lista ordenada), usamos a tag <strong>ol</strong>. Nesse tipo de lista a ordem dos itens importa.</p>
+                    <p>Dentro de <strong>ol</strong> se usa a tag <strong>li</strong> para marcar os itens da listas que ficarao organizados do primeiro ao ultimo, com um marcador ao lado esquerdo de cada item indicando sua ordem. <br> EX:</p>
+
+                    <h4>Jogos que dao saudades</h4>
+<pre>
+&lt;OL&gt; 
+    &lt;LI&gt;The Witcher3&lt;/LI&gt;
+    &lt;LI&gt;Metal Gear Solit V&lt;/LI&gt;
+    &lt;LI&gt;Bordelands2&lt;/LI&gt;
+    &lt;LI&gt;Tom Clancys Ghost Recon Phantoms&lt;/LI&gt;
+    &lt;LI&gt;Team Fortres2&lt;/LI&gt;
+&lt;/OL&gt;
+</pre>
+                    <ol>
+                        <li>The Witcher3</li>
+                        <li>Metal Gear Solit V</li>
+                        <li>Bordelands2</li>
+                        <li>Tom Clancys Ghost Recon Phantoms</li>
+                        <li>Tem Fortres2</li>
+                    </ol>
+                    <p>Observe a numeraçao.</p>
+
+                    <h3>Parametros de <strong>ol</strong></h3>
+                    <ul>
+                        <li class="itensprincipais"><strong><code>type=""</code></strong></li>
+                        <p>Seus valores sao:</p>
+                        <ul class="semtype">
+                            <li><strong>1</strong> -Cria listas numeradas EX:1,2,3,4 etc.(valor padrao)</li>
+                            <li><strong>A</strong> -Cria listas alfabeticas em maiusculas EX: A,B,C,D etc.</li>
+                            <li><strong>a</strong> -Cria listas alfabeticas em minusculas EX: a,b,c,d etc.</li>
+                            <li><strong>I</strong> -Cria listas com algarismos romanos em maiusculas EX: I,II,III,IIII etc.</li>
+                            <li><strong>i</strong> -Cria listas com algarismos romanos em minusculas EX: i,ii,iii,iiii etc.</li>
+                        </ul>
+                        <li class="itensprincipais"><strong><code>start=""</code></strong></li>
+                        <p>O parametro start é usado para indicar o começo da contagem da lista se ele for 5 a lista começarar de 5 a diante ignorando os numeros anteriores a ele.</p>
+                    </ul>
+                </section>
+
+                <h2>Listas nao Ordenadas</h2>
+                <section class="listas">
+                    <p>Quando a posiçao dos itens da lista nao importa usamos a tag <strong>ul </strong>para criamos uma <strong>unordered list</strong> (lista nao ordenada).Usamos <strong>li</strong> para marcar os itens da mesma maneira  que fazemos em  <strong>ol</strong>. <br>EX: </p>
+
+                    <h4>Jogos que dao saudades</h4>
+<pre>
+&lt;uL&gt; 
+    &lt;LI&gt;The Witcher3&lt;/LI&gt;
+    &lt;LI&gt;Metal Gear Solit V&lt;/LI&gt;
+    &lt;LI&gt;Bordelands2&lt;/LI&gt;
+    &lt;LI&gt;Tom Clancys Ghost Recon Phantoms&lt;/LI&gt;
+    &lt;LI&gt;Team Fortres2&lt;/LI&gt;
+&lt;/uL&gt;
+</pre>
+                    <ul>
+                        <li>The Witcher3</li>
+                        <li>Metal Gear Solit V</li>
+                        <li>Bordelands2</li>
+                        <li>Tom Clancys Ghost Recon Phantoms</li>
+                        <li>Tem Fortres2</li>
+                    </ul>
+                    <p>Perceba que nao temos numeraçao.</p>
+                    
+                    <h3>Parametro de <strong>ul</strong></h3>
+                    <ul>
+                        <li class="itensprincipais"><strong><code>type=""</code></strong></li>
+                        <p>Seus valores sao:</p>
+                        <ul class="semtype">
+                            <li><strong>Circle</strong></li>
+                            <ul type="circle">
+                                <li>Exempo de circle.</li>
+                            </ul>
+                            <li><strong>Disc</strong></li>
+                            <ul type="disc">
+                                <li>Exemplo de disc.</li>
+                            </ul>
+                            <li><strong>Square</strong></li>
+                            <ul type="square">
+                                <li>Exemplo de square.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </section>
+
+                <h2>Listas de Definiçao</h2>
+                <section>
+                    <p>Listas de definiçao sao usadas quando queremos listar termos e mostra seus significados.Para criarmos uma <strong>definition list</strong> se usa um trio de tags e elas sao as seguintes:</p>
+                    <ul class="semtype">
+                        <li class="itensprincipais"><strong>DL</strong></li>
+                        <p>È a tag que usamos para fazer uma lista de definiçao.</p>
+                        <li class="itensprincipais"><strong>DT</strong></li>
+                        <p>È o termo da lista (<strong>definition term</strong>).</p>
+                        <li class="itensprincipais"><strong>DD</strong></li>
+                        <p>È a descriçao do termo (<strong>definition description</strong>).</p>
+                    </ul>
+                    <p>Assim como <strong>li</strong>, <strong>dt</strong> e <strong>dd</strong> nao prescisam de feixamento.</p>
+                </section>
+            </article>
+    </main>
+    <footer>
+        <p>Dyn Marv</p>
+    </footer>
+</body>
+</html>

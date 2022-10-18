@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor2:#8b8bdb;
+    --cor3:#1F072E;
+    --cor4:#561775;
+    --cor5:#3D1DD0;
+    --cor6:#babaef;
+    --cor7: #dc143c;
+
+    --fontespecial: 'Shadows Into Light', cursive;
+}
+
+body {
+    background-image: linear-gradient(to right,var(--cor2),var(--cor6));
+}
+
+header {
+    height: 140px;
+    background-image:radial-gradient(circle,var(--cor4),var(--cor3));
+    text-align: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.642);
+}
+header h1 {
+    padding-top: 40px;
+    margin-bottom: 10px;
+    font-size: 2.1em;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    background-image: radial-gradient(circle,var(--cor4),var(--cor3)80%);   
+    padding: 10px;
+    margin:  0px auto 0px auto;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.642);
+}
+nav a {
+    padding: 5px 10px;
+    color: var(--cor6);
+    font-size: 1.3em;
+    border-radius: 10px 5px;
+    text-decoration: none;
+    font-family: var(--fontespecial);
+}
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor6);
+}
+
+main {
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.478);
+    max-width: 700px;
+    min-width: 400px;
+    margin: 0px auto;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section {
+    margin: 10px 0px;
+    text-align: justify;
+    background-color: white;
+}
+article h2.esquerda {
+    max-width: 200px;
+    padding: 0px 10px;
+    color: white;
+    margin: 15px 5px ;
+    text-align: center;
+    font-size: 1.7em;
+    background-color: var(--cor4);
+    border-radius: 10px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.56);
+}
+article h2.textocentralizado {
+    text-align: center;
+    background-image: linear-gradient(to right,var(--cor6), var(--cor4), var(--cor4),var(--cor6));
+    color: white;
+    margin: 30px -15px;
+    padding: 10px;
+}
+article h3 {
+    text-align: center;
+    padding: 6px;
+    margin: 10px;
+    color: var(--cor3);
+}
+article h3.esquerda {
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: var(--cor6);
+    color: white;
+}
+article p {
+    line-height: 1.8em;
+    text-indent: 15px;
+    padding: 5px 10px;
+    text-align: justify;
+}
+article code.precode {
+    padding: 10px;
+    font-size: 1.3em;
+}
+section strong {
+    color: var(--cor2);
+    padding: 0px 5px;
+    font-size: 1.1em;
+}
+section strong.corvermelha {
+    color: var(--cor7);
+}
+div {
+    margin: 10px;
+
+}
+div.textao {
+    background-color: var(--cor4);
+    padding: 10px;
+    margin:  0px -15px 0px -15px;
+}
+div.textao > p {
+    background-color: white;
+}
+div#gradlinear {
+     background-image: linear-gradient(to right,var(--cor3),var(--cor5));
+    height: 200px;
+}
+div#gradradial {
+   background-image: radial-gradient(circle,var(--cor5),var(--cor3));
+    height: 200px;
+}
+
+section ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 10px;
+}
+section ul > li {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+section ul > li > strong {
+    color: var(--cor3);
+}
+section ul > p {
+    text-align: justify;
+}
+section ul.textocentralizado > p {
+    text-align: center;
+    line-height: 1.8em;
+}
+section ol {  
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 10px;
+}
+section ol > p {
+    text-align: justify;
+}
+section ol > li > strong {
+    color: var(--cor3);
+}
+aside.primario {
+    padding: 10px 10px;
+    background-image: linear-gradient(to right,var(--cor3),var(--cor4));
+    margin: 30px -16px;
+}
+aside h3 {
+    text-align: center;
+    color: white;
+    padding: 6px 0px;
+    margin: 5px 0px;
+}
+aside ol {
+    padding: 5px 5px;
+    list-style-position: inside;
+    background-color: var(--cor6);
+    list-style-type: none;
+    border-radius: 3px;
+}
+aside ol > li {
+    color: white;
+    padding-bottom: 5px;
+}
+aside li > strong {
+    padding: 0px 3px;
+    border-radius: 10px;
+}
+aside p {
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: white;
+    line-height: 1.3em;
+    text-align: justify;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+aside code > pre {
+    padding: 10px;
+    background-color: white;
+}
+
+aside.secundario {  
+    margin: 0px -15px;
+    background-image: linear-gradient(to top,var(--cor3), var(--cor3),var(--cor4));
+}
+aside.secundario > div > p {
+    background-color: var(--cor6);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 0px;
+    text-align: justify;
+    padding: 20px;
+}
+aside.secundario > ol {
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+
+}
+aside.secundario > ol > li {
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+aside.secundario > div {
+    background-color: white;
+}
+footer {
+    background-color: var(--cor3);
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+footer:hover {
+    background-color: var(--cor4);
+}
+footer#principal {
+    margin-top: 250px;
+}

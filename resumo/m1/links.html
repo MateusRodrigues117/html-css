@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&Delta;</h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self" rel="prev">Principal</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Links</h2>
+            <section>
+                <p><strong>Hyperlinks</strong> sao ligaçoes entre um ponto a outro na <strong>world wide web</strong>.Toda vez que cliclamos em um local que nos direciona para outra pagina estamos interagindo com <strong><em>hyperlinks</em></strong>.</p>
+                <p>Para criarmos um link, devemos criar ancoras usando a tag <strong>a</strong> que determina que o texto inserido nela se torna uma ligaçao para outro lugar na internet.EX:</p>
+                <p>Main theme <a href="https://youtu.be/EevWu6A1LPM" target="_blank" rel="external">ASC3</a></p>
+ <pre><code> 
+    Main theme &lt;a href="URL" target="_blank" rel="external"&gt;ASC3 &lt;/a&gt;    
+</code></pre>
+                <h3>Parametros de <strong>a</strong></h3>
+
+                <ul>
+                    <li class="itensprincipais"><strong><code>href=""</code></strong></li>
+                    <p>Dentro de suas aspas se coloca a <strong>url</strong>.</p>
+
+                    <li class="itensprincipais"><strong><code>hreflang=""</code></strong></li>
+                    <p>Permite indicar para o navegador o idioma original da pagina a qual o link esta redirecionando, basta colocalo entre as aspas.</p>
+                </ul>   
+
+                <h3>Atributos de <strong>a</strong></h3>
+                    <ul>
+                        <li class="itensprincipais"><strong><code>target=""</code></strong></li>
+                        <p>Indica a aba em que o link abrirar,possue os seguintes valores:</p>
+                        <ul class="semtype">
+                            <li><strong>_blank</strong></li>
+                            <p>Abri o link em uma novas aba no mesmo navegador.</p>
+                            <li><strong>_self</strong></li>
+                            <p>Abri o link na aba atual do navegador.</p>
+                        </ul>
+                        <li class="itensprincipais"><strong><code>rel=""</code></strong></li>
+                        <p>Indica qual é a natureza do link, seus valores:</p>
+                        <ul class="semtype">
+                            <li><strong>next</strong></li>
+                            <p>Indica que o link é a proxima parte da pagina atual.</p>
+                            <li><strong>prev</strong></li>
+                            <p>Indica que o link é a parte anterior da pagina atual.</p>
+                            <li><strong>author</strong></li>
+                            <p>Indica que o link leva para pagina do author do artigo.</p>
+                            <li><strong>external</strong></li>
+                            <p>Indica que o link leva para uma pagina externa.</p>
+                            <li><strong>nofollow</strong></li>
+                            <p>Indica que é um link nao adoçado pelo author da pagina, geralmente usado para links de anuncios.</p>
+                            <li><strong>dofollow</strong></li>
+                            <p>È o oposto de nofollow.</p>
+                        </ul>
+                    </ul> 
+                        
+            </section>
+
+                 <h2>Downloads</h2>
+                <section>
+                    <p>Para criarmos um link para efetuar o <strong><em>download</em></strong> de algum arquivo basta colocar o caminho do arquivo dentro de <strong><code>href=""</code></strong>, adicionar o atributo <strong><code>download=""</code></strong> com o valor configurado para o nome do arquivo e usar o atributo <strong><code>type=""</code></strong> para indicar o tipo do arquivo (media types) que esta sendo baixado.</p>
+
+                    <p>Pdf usado para criar essa pagina sobre <a href="../pdfs/10 - Ligações em toda parte.pdf" download="ligaçoesemtodaparte.pdf" type="application/pdf">links</a></p>
+
+                    <aside>
+                        <h3>Media Types</h3>
+                        <ul>
+                            <li>application/zip</li>
+                            <li>application/pdf</li>
+                            <li>text/html</li>
+                            <li>text/css</li>
+                            <li>text/javascript</li>
+                            <li>video/mp4</li>
+                            <li>video/h264</li>
+                            <li>video/jpeg</li>
+                            <li>audio/aac</li>
+                            <li>audio/mpeg</li>
+                            <li>font/ttf</li>
+                            <li>image/jpeg</li>
+                            <li>image/png</li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h3>Linux</h3>
+                        <p>Se estiver sereferindo a pasta atual do servidor pode usar <strong>./</strong> antes do nome do arquivo.Se quiser se referir a pasta imediatamente superior na hierarquia, use <strong>../</strong> para voltar um nivel para a pastar mais externa.</p>
+                    </aside>
+                </section>
+        </article>
+    </main>
+    <footer>
+        <p>Dyn Marv</p>
+    </footer>
+</body>
+</html>

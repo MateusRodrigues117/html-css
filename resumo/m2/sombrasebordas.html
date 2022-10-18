@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras/Bordas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sombras e Bordas</h1>
+        <nav>
+            <a href="index.html">Principal</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 class="esquerda">Sombras</h2>
+                <p>Para colocarmos sombras nas caixas adicionamos a propriedade <strong>box-shadow</strong> para criarmos sombras, ela possue quatro valores a ordem é sempre essa:</p>
+                <ol>
+                    <li><strong>Deslocamento</strong> <strong class="corvermelha">horizontal</strong>( h-offset )</li>
+                    <p>Quanto a sombra vai andar para a direita.( valores negativos causam deslocamento para esquerda )</p>
+                    <li><strong>Deslocamento</strong> <strong class="corvermelha">vertical</strong>( v-offset )</li>
+                    <p>Quanto a sombra vai andar para baixo. ( valores negativos causam deslocamento para cima ) </p>
+                    <li><strong>Embaçamento</strong> ( blur )</li>
+                    <p>Quanto a sombra vai se espalhar pelo fundo.</p>
+                    <li><strong>Cor</strong></li>
+                    <p>Indica a cor da sombra é possivel usar transparencia.</p>
+                </ol>
+                <p> <code>boc-shadow: 3px 5px 4px <strong>black</strong>;</code></p>
+                <aside class="primario">
+                    <p>As sombras geralmente sao pretas entao use a cor preta com variaçoes na transparencia.</p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="esquerda"> Bordas</h2>
+                <p>Para arredondar todos os vertices da borda usamos:</p>
+                <code>border-radius; <strong>10px;</strong></code>
+                <p>Tambem podemos indicar cada vertice individualmente:</p>
+                <code>border-radius: <strong>10px 20px 30px 40px;</strong></code>
+                <p>Assim como para margem podemos usar dois valores o primeiro indicando o canto superior esquerdo e o canto inferior direito o segundo para o canto inferior esquerdo e o superior direito.</p>
+                <code>border-radius: <strong>10px 20px;</strong></code>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Dyn_Marv</p>
+    </footer>
+</body>
+</html>

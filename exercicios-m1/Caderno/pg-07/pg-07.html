@@ -1,0 +1,95 @@
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina-07</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <hr>
+    <h1>&lt;Audio&gt;</h1>
+    
+    <hr>
+    <h2>Formatos de audio</h2>
+    <ul>
+        <li>MP3</li>
+        <li>OGG</li>
+        <li>WAV</li>
+    </ul>
+    <p>Midia type</p>
+    <ol>
+        <li>audio/mpeg</li>
+        <li>audio/ogg</li>
+        <li>audio/wav</li>
+    </ol>
+ 
+    <p>Dentro da tag <strong>&lt;AUDIO&gt;</strong> se usa <strong>source src</strong> para  dar   varias origens para  o  arquivo.</p>
+    
+    <hr>
+    <h2>Parametros de audio</h2>
+    <ul>
+        <li>Preload</li>
+        <ul>
+            <li>Auto</li>
+            <p>Considera carregar o audio completo antes de carregar o site.</p>
+            <li>Metadata</li>
+            <p>Carrega aapenas algumas informaçoes basicas.</p>
+            <li>None</li>
+            <p>Nao carrega ate o usuarior dar play.</p>
+        </ul>
+        <li>Autoplay</li>
+        <p>Inicia a musica assim que abrir o site.</p>
+        <li>Controls</li>
+        <p>Mostra os controles.</p>
+        <li>loop</li>
+        <p>Deixa a musica em loop.</p>
+    </ul>
+
+    <h3>Musica</h3>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/Skylines - Anno Domini Beats.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr>
+    <h1>&lt;Video&gt;</h1>
+
+    <hr>
+    <h2>Formatos de video</h2>
+    <ul>
+        <li>MP4</li>
+        <li>M4Y</li>
+        <li>WEBM</li>
+    </ul>
+    <p>Midia type</p>
+    <ol>
+        <li>video/mp4 (mp4 e m4y)</li>
+        <li>video/webm</li>
+        <li>video/ogg</li>
+    </ol>
+    <p>Dentro da tag &lt;VIDEO&gt; se usa <strong>source src</strong> para dar varias origens para o arquivo.</p>
+
+    <hr>
+    <h2>Parametros de video</h2>
+    <ul>
+        <li>Autoplay</li>
+        <li>Loop</li>
+        <li>Controls</li>
+        <li>Poster</li>
+        <p>Permite deixar uma imagem como capa do video.</p>
+    </ul>
+
+    <hr>
+    <h2>Video hospedado localmente</h2>
+    <video width="560" height="315" controls>
+        <source src="midia/video.mp4.mp4" type="video/mp4">
+    </video>
+
+    <h2>Video hospedado pelo youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5OU10zdCGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+    <p>Voltar a <a href="../index.html">pagina-01</a></p>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&Delta;</h1>
+    </header>
+    <nav>
+        <a href="index.html" target="_self" rel="prev">Principal</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Imagens</h2>
+            <section>
+                <p>Para carregar imagens no site usamos a tag <strong>img</strong>, mas quando prescisamos criar imagens que se adaptam ao tamanho da tela temos que usar a tag <strong>picture</strong> que é responsavel por concentar todas as fontes de uma imagem, cada fonte contendo a imagem especifica para cada proporçao da tela.</p>
+                <p>As fontes sao colocadas dentro da tag <strong>source</strong> <code>(source media="")</code> que é inserida dentro da tag <strong>picture</strong> junto com a  <strong>img</strong> contendo a imagem padrao.</p>
+
+                <aside>
+                    <h3>Ordem</h3>
+                    <p>A ordem entre os <strong>source</strong> é importante, os itens mais acima tem que ser os de menores tamanhos para <strong>max-width</strong> e os seguintes sejam maiores, de forma crescente. O ultimo item dentro de <strong>picture</strong> deve ser a imagem padrao.</p>
+                </aside>
+                <p>Assim como no EX:</p>
+
+<pre><code>
+&lt;picture&gt;
+    &lt;source media="(max-width:600px )" srcset="../imagens/elfoescritor.png"&gt;
+    &lt;img src="../imagens/espadavermelha-g.png" alt=""&gt;
+&lt;/picture&gt;
+</code></pre>
+
+                <h3>Parametros de <strong>source</strong></h3>
+
+                <ul>
+                    <li class="itensprincipais"><strong><code>type=""</code></strong></li>
+                    <p>Indica o media type da imagem.</p>
+                    <li class="itensprincipais"><strong><code>srcset=""</code></strong></li>
+                    <p>Configura o local da imagem que aparecerar quando o tamanho for atingido.</p>
+                    <li class="itensprincipais"><strong><code>media=""</code></strong></li>
+                    <p>Indica o tamanho que deve ser considerado para o carrregamento das imagens.</p>
+                </ul>
+                <p>Observe o exemplo acima funcionando:</p>
+
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../imagens/elfoescritor.png">
+                    <img src="../imagens/espadavermelha-g.png" alt="espada vermelha">
+                </picture>
+
+                <aside>
+                    <h3>Linux</h3>
+                    <p>Se estiver sereferindo a pasta atual do servidor pode usar <strong>./</strong> antes do nome do arquivo.Se quiser se referir a pasta imediatamente superior na hierarquia, use <strong>../</strong> para voltar um nivel para a pastar mais externa.</p>
+                </aside>
+             
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Dyn Marv</p>
+    </footer>
+</body>
+</html>
