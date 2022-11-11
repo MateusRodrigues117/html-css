@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            height: 400px;
+            width: 400px;
+            text-align: center; /*alinhamento horizontal*/
+            border-collapse: collapse;
+
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;/*alinhamento vertical*/
+            border: 1px solid black;
+        }
+
+        .centro {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .direita {
+            text-align: right;
+            vertical-align: middle;
+        }
+        .baixo {
+            vertical-align: bottom;
+        }
+        .esquerda {
+            text-align: left;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <tr >
+            <td class="baixo">A1</td>
+            <td>B1</td>
+            <td class="baixo">C1</td>
+        </tr>
+        <tr>
+            <td class="esquerda">A2</td>
+            <td class="centro">B2</td>
+            <td class="direita">C2</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td class="baixo">C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
