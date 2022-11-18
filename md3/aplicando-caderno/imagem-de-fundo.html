@@ -7,13 +7,56 @@
     <title>Imagem de Fundo</title>
     <style>
         section {
-            background-image: url(../desafio01/imagens/background001.jpg);
+            position: relative;
+
+
+            height: 1000px;
+            background-image: url(imagens/dbwallpaper.jpg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            
+            background-attachment: fixed;
+        
+
+            /* Short-hand */    
+        }
+
+        h1 {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            padding: 20px;
+            width: 400px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+
+            font-variant: small-caps;
+            font-size: 3vw;
+        }
+
+        h1::after {
+            content: ' ta certo';
+            color: red;
+        }
+
+        p {
+            width: 500px;
+            background-color: white;
+            text-align: center;
+
         }
     </style>
 </head>
 <body>
     <section>
-
+        <h1>Centraliza ai!!!</h1>
+        
     </section>
+    <p>Nas esquece de olhar no VS Code</p>
 </body>
 </html>
